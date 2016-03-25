@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <color name="white">#FFFFFF</color>
+    <color name="base_tab_indicator_color">#33B5E5</color>
+    <color name="base_tab_indicator_color1">#b88d59</color>
+    <color name="base_tab_indicator_color2">#083048</color>
+ <color name="base_list_desc_color">#ff808080</color>
+
+</resources>

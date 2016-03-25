@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/background_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:listSelector="@drawable/background_selector"
+        android:numColumns="4" >
+    </GridView> 
+
+   
+
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+                
+             <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/ms" />
+	         <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+             
+</LinearLayout>
+  <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dy" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="美食" />
+</LinearLayout>
+   <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xxyl" />
+        <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+    </LinearLayout>
+   <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lr" />
+        <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+</LinearLayout>
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+  <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shsg" />
+    <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+    </LinearLayout>
+      <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wm" />
+        <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+        </LinearLayout>
+  <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jd" />
+    <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+    </LinearLayout>
+      <LinearLayout
+             android:orientation="vertical" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zby" />
+    <TextView
+	           android:id="@+id/textView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:text="美食" />
+    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>  -->
+
+</FrameLayout>
