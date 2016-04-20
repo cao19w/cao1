@@ -65,7 +65,6 @@ import com.hyphenate.EMMessageListener;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMConversation;
 import com.hyphenate.chat.EMMessage;
-import com.hyphenate.exceptions.HyphenateException;
 
 @SuppressLint("NewApi") public class Chart1Activity extends Activity implements OnClickListener,OnRefreshListenerHeader{
 	private ViewPager mViewPager;
