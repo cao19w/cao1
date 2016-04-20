@@ -2,11 +2,6 @@ package com.example1.db;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.baidu.platform.comapi.map.p;
-import com.example1.comment.MyApplication;
-
-import android.R.integer;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

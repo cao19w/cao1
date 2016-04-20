@@ -1,7 +1,7 @@
 package com.example1.broadcast;
 
-import com.example1.cao1.ActivityCollector;
-import com.example1.cao1.LoginActivity;
+import com.example1.ui.ActivityCollector;
+import com.example1.ui.LoginActivity;
 
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;

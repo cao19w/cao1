@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example1.cao1.MainActivity$PlaceholderFragment" >
+    tools:context="com.example1.ui.MainActivity$PlaceholderFragment" >
   <LinearLayout
         android:layout_width="match_parent"
          android:layout_height="0dp"

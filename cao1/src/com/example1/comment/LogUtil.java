@@ -7,7 +7,7 @@ static final int verbose=1;
 static final int debug=2;
 static final int info=3;
 
-static final int level=3;
+static final int level=0;
 public static void  v(String tag,String msg) {
 	if (level<=verbose) {
 		Log.v(tag, msg);

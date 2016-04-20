@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+   <string name="edittext_notice_0">请输入内容...</string>
+    <string name="send">发送</string>
+    <string name="delete">删除</string>
+    <string name="copy">复制</string>
     <string name="app_name">cao1</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string-array name="array1">
           <item name="11">北京</item>
             <item name="22">上海</item>
+    </string-array>
+     <string-array name="activity_titles">
+        <item>获取插件列表</item>
+        <item>更新已安装插件状态</item>
+       
+    </string-array>
+    <string-array name="activity_descs">
+        <item>
+            	从服务器上获取最新插件列表
+        </item>
+        <item>
+            	查询服务器上最新的插件状态
+        </item>
+        
     </string-array>
 </resources>

@@ -10,4 +10,27 @@
         android:layout_height="wrap_content"
         android:text="发送退出广播" />
 
+       <Button
+           android:id="@+id/dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="获取插件列表" />
+
+       <Button
+           android:id="@+id/up"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="更新已有插件" />
+<Button
+           android:id="@+id/theme"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="主题浏览" />
+
+<Button
+    android:id="@+id/chart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="聊天窗口" />
+
 </LinearLayout>

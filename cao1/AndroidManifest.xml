@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!-- 网络状态 -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/><!-- 注册系统广播，开启启动-->
@@ -32,24 +32,64 @@
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
+ <!-- 插件化权限-->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+
+	
+	 <uses-permission android:name="android.permission.VIBRATE" />
+	  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+      <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
     <application
         android:name="com.example1.comment.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
+       	<!-- 设置环信应用的appkey -->
+    	<meta-data android:name="EASEMOB_APPKEY"  android:value="cao-008#cao008" />
+    	<!-- 声明sdk所需的service SDK核心功能-->
+    	<service android:name="com.hyphenate.chat.EMChatService" android:exported="true"/>
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        
+        
+      <meta-data  android:name="apkplug-auth" android:value="Vo7samraDoCAweBwB7fsidNfxl0/ZkU9+4NR81tqjTcGv21QoFbbI0mRomcQerl8jH7daHkPddyxAS3VCAVVI97ODWdHattfUHwrhfLxHJZmZEfx8vGtLl8wWoGjwWIKVy+w8+gLULpKGy1rexfmD/8zFFAyOmVyJW6l21EmiMA=" ></meta-data>
         <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="p7MvUbDC7IWGjGZ3U1m02BG8"/>
+<meta-data  android:name="apkplug-appid" android:value="9361cf0e49b5aea6" ></meta-data> 
+<meta-data  android:name="apkplug-theme-auth" android:value="kAQGRM5ZqR+QspJGiCjdV+QSmZd687BOC6uDCjij93Imo/TIcajYj9kQsS8z866SdtvUBORl6RA/mavcq0YDAKBwfFCwugSiOj/EHjPaT71dr5i4n8LugQ4tqGQ96z/qaKSq7/OsyHaSk8zYGKLgjHa69BRfwj+fQHOlMvHjNqs=" ></meta-data>
+			<activity
+			android:name="org.apkplug.app.apkplugActivity"   
+			android:theme="@style/android:Theme.Light"
+			android:configChanges="orientation|keyboardHidden"
+			/>
         <activity
-            android:name="com.example1.cao1.MainActivity"
+            android:name="com.example1.ui.MainActivity"
                android:screenOrientation="portrait"
             android:label="@string/app_name" >
   
         </activity>
-        <provider android:name="provider.MyProvider"
+        <provider android:name="com.example1.provider.MyProvider"
               android:authorities="com.example1.provider">
             </provider>
             <activity
-            android:name="com.example1.cao1.LoginActivity"
+            android:name="com.example1.ui.LoginActivity"
                android:screenOrientation="portrait"
             android:label="@string/app_name" >
         <intent-filter>
@@ -59,7 +99,7 @@
             </intent-filter>
         </activity>
            <activity
-            android:name="com.example1.cao1.xxaa"
+            android:name="com.example1.ui.xxaa"
             android:label="@string/app_name" >
           
         </activity>
@@ -78,10 +118,17 @@
                 <action android:name="com.example.cao1.test"/>
              </intent-filter>
         </receiver>
-           <activity android:name="com.example1.cao1.MessageActivity"></activity>
-        <activity android:name="com.example1.cao1.ChooseAreaActivity"></activity>
-          <activity android:name="com.example1.cao1.PlayerActivity"></activity>
-           <activity android:name="com.example1.cao1.MapActivity"></activity>
+         <activity 
+             android:name="com.example1.ui.Chart1Activity"
+               android:theme="@android:style/Theme.Light.NoTitleBar"
+             ></activity>
+         <activity android:name="com.example1.ui.ChartActivity"></activity>
+          <activity android:name="com.example1.ui.SearchPlugins"></activity>
+          <activity android:name="com.example1.ui.UpdatePlugins"></activity> 
+           <activity android:name="com.example1.ui.MessageActivity"></activity>
+        <activity android:name="com.example1.ui.ChooseAreaActivity"></activity>
+          <activity android:name="com.example1.ui.PlayerActivity"></activity>
+           <activity android:name="com.example1.ui.MapActivity"></activity>
            <service android:name="com.example1.service.RuningService"></service>
            <receiver android:name="com.example1.broadcast.AlarmReciver"></receiver>
     </application>

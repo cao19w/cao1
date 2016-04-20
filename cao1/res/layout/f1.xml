@@ -54,7 +54,7 @@
             android:layout_width="fill_parent"
             android:layout_height="150dip" />
 
-        <com.example1.cao1.CirclePageIndicator
+        <com.example1.ui.CirclePageIndicator
             xmlns:app="http://schemas.android.com/apk/android"
             android:id="@+id/indicator"
             android:layout_width="fill_parent"

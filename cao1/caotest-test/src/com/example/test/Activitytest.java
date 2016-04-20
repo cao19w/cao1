@@ -1,8 +1,8 @@
 package com.example.test;
 
-import com.example1.cao1.ActivityCollector;
-import com.example1.cao1.LoginActivity;
-import com.example1.cao1.MainActivity;
+import com.example1.ui.ActivityCollector;
+import com.example1.ui.LoginActivity;
+import com.example1.ui.MainActivity;
 
 import android.test.AndroidTestCase;
 
@@ -28,6 +28,6 @@ public class Activitytest extends AndroidTestCase {
 		ActivityCollector.addActivity(loginActivity);
 		assertEquals(1, ActivityCollector.activities.size());
 		ActivityCollector.addActivity(new MainActivity());
-		assertEquals(2, ActivityCollector.activities.size());
+		assertEquals(2, ActivityCollector.activities.size());//比较大小
 	}
 }
