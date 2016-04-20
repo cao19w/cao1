@@ -86,7 +86,7 @@ import com.hyphenate.exceptions.HyphenateException;
 	private SimpleDateFormat sd;
 	
 	private String reply="";//Ä£Äâ»Ø¸´
-private LinearLayout boom;
+    private LinearLayout boom;
 	@SuppressLint("SimpleDateFormat")
 	private void initViews() {
 		mListView = (DropdownListView) findViewById(R.id.message_chat_listview);
